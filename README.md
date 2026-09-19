@@ -54,7 +54,7 @@ Master                         Slave
 `IDLE → RADDR_CHANNEL → RDATA_CHANNEL → IDLE` (read)
 
 ## Response Codes
-Only `OKAY (2'b11)` is used — no error responses are generated (address is not range-checked beyond the 32-entry register file, `NO_REG = 32`).
+Only `OKAY (2'b11)` is used, no error responses are generated (address is not range-checked beyond the 32-entry register file, `NO_REG = 32`).
 
 ## Testbench Flow (`AXI4_lite_tb.v`)
 For each test case:
